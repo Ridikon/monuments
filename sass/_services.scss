@@ -1,0 +1,132 @@
+.services {
+	padding-bottom: 90px;
+	background: url(../images/services-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+
+.services__content-wrap {
+	height: 425px;
+	min-width: 300px;
+	position: relative;
+	margin-top: 68px;
+}
+
+.services__content {
+	& img {
+		display: block;
+		margin: 0 auto;
+	}
+	& .services__h4 {
+		line-height: 1.3;
+		margin-top: 20px;
+		font-family: "RobotoRegular";
+		font-size: 18px;
+		color: #222;
+		text-transform: uppercase;
+		padding: 0 40px;
+	}
+	& .services__p {
+		line-height: 22px;
+		margin-top: 30px;
+		padding: 0 40px;
+	}
+	& .services__button {
+		position: absolute;
+		bottom: 0;
+		transform: translateX(-72px);
+		background: #0955bc;
+		color: #fff;
+		font-size: 18px;
+		padding: 14px 35px 15px;
+		border-radius: 3px;
+		-webkit-box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.75);
+		-moz-box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.75);
+		box-shadow: 1px 1px 10px 3px rgba(0,0,0,0.75);
+		&:hover {
+			background: rgb(60, 113, 201);
+			-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+		}
+		&:active {
+			-webkit-box-shadow: inset 1px 1px 10px 3px rgba(0,0,0,0.75);
+			-moz-box-shadow: inset 1px 1px 10px 3px rgba(0,0,0,0.75);
+			box-shadow: inset 1px 1px 10px 3px rgba(0,0,0,0.75);
+		}
+	}
+}
+
+.services__button-wrap {
+	
+	width: 100%;
+	text-align: center;
+}	
+.services__content-scroll {
+	height: 175px;
+	overflow: hidden;
+	margin:5px 0;
+}
+.services__button {
+	margin-bottom: 0;
+}
+
+.services__content-hidden {
+	max-width: 900px;
+	display: none;
+}
+.services__content-visible {
+	max-width: 800px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 10px 0 20px 0;
+	background: #fff;
+	& img {
+		display: block;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+	& h4 {
+		line-height: 1.3;
+		margin-top: 20px;
+		font-family: "RobotoRegular";
+		font-size: 18px;
+		color: #222;
+		text-transform: uppercase;
+		padding: 0 40px;
+	}
+	& .services__content-hidden-p {
+		line-height: 22px;
+		margin-top: 30px;
+		padding: 0 40px;
+	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.services__content {
+		& .services__h4, .services__p {
+			padding: 0 10px;
+			text-align: center;
+		}
+	}
+}
+@media only screen and (max-width : 992px) {
+	.services__content-wrap {
+		height: 350px;
+	}
+	.services__content-scroll {
+		height: 100px;
+	}
+	.services__p {
+		display: none;
+	}
+}
+@media only screen and (max-width : 480px) {
+	.services__content-wrap {
+		height: 365px;
+	}
+}
+@media only screen and (max-width : 320px) {
+	.services__content-wrap {
+		height: 380px;
+	}
+}

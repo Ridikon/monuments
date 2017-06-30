@@ -1,0 +1,61 @@
+.hidden_form {
+	display: none;
+}
+
+.hidden__form-wrapper {
+	background: #fff;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+	max-width: 360px;
+	.hidden__form-p-big {
+		margin: 13px;
+		text-transform: uppercase;
+		font-size: 33px;
+	}
+	.hidden__form-p-small {
+		margin-bottom: 30px;
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.hidden__form-content {
+		margin: 0 auto 35px;
+		max-width: 260px;
+		.hidden__form-item {
+			color: #626262;
+			border: 1px solid #626262;
+			outline: none;
+			margin-bottom: 17px;
+			width: 100%;
+			padding: 10px 10px 10px 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.hidden__form-button {
+		margin: 0 auto;
+		width: 100%;
+		.hidden__form-button-click {
+			background: #ff6161;
+			// display: block;
+			width: 100%;
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 18px 0;
+			color: #fff;
+			text-decoration: none;
+			&:hover {
+				background: #fc1616;
+			}
+		}
+	}
+}
+
+.image_autor {
+	background: url(../images/man.png) no-repeat 8px center;
+}
+
+.image_phone {
+	background: url(../images/call.png) no-repeat 8px center;
+}

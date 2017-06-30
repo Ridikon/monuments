@@ -1,0 +1,107 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "footer";
+@import "header";
+@import "services";
+@import "sticky-menu";
+@import "menu-mobile";
+@import "company";
+@import "preference";
+@import "coments";
+@import "advice";
+@import "catalog";
+@import "form";
+
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: "RobotoRegular";
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+	font-family: "RobotoMedium";
+	font-size: 18px;
+	color: #d5d5d5;
+}
+
+p {
+	font-family: "RobotoRegular";
+	font-size: 15px;
+	color: #323232;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	&:active {
+		text-decoration: none;
+		outline: none;
+	}
+	&:focus {
+		text-decoration: none;
+		outline: none;
+	}
+	&:hover {
+		outline: none;
+		text-decoration: none;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 360px;
+    z-index: 2;
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px 1px rgba(0,0,0,0.75);
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+
+.block__h2 {
+	margin-top: 55px;
+	position: relative;
+	text-align: center;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #aac1e0;
+	padding-bottom: 30px;
+	& h2 {
+		font-family: "RobotoRegular";
+		font-size: 22px;
+		color: #222222;
+		text-transform: uppercase;
+	}
+}
+
+.block__img {
+	position: absolute;
+	top: 48px;
+	transform: translateX(-12px);
+}
+
+.hidden__form-button-click {
+	-webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+	&:active {
+		-webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+		-moz-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+		box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.75);
+	}
+}
+

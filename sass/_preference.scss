@@ -1,0 +1,53 @@
+.preference {
+	background: url(../images/preference-bg.jpg) no-repeat;
+	background-size: cover;
+}
+
+.preference__info {
+	margin-top: 45px;
+	margin-bottom: 85px;
+	& .preference__info-img1, .preference__info-img2, .preference__info-img3, .preference__info-img4  {
+		margin: 0 auto;
+		width: 144px;
+		height: 166px;
+		transition: .1s ease all;
+	}
+	& .preference__info-img1 {
+		background: url(../images/pref_icon-1.png) no-repeat;
+		&:hover {
+			background: url(../images/pref_icon_hov-1.png) no-repeat;
+		}
+	}
+	& .preference__info-img2 {
+		background: url(../images/pref_icon-2.png) no-repeat;
+		&:hover {
+			background: url(../images/pref_icon_hov-2.png) no-repeat;
+		}
+	}
+	& .preference__info-img3 {
+		background: url(../images/pref_icon-3.png) no-repeat;
+		&:hover {
+			background: url(../images/pref_icon_hov-3.png) no-repeat;
+		}
+	}
+	& .preference__info-img4 {
+		background: url(../images/pref_icon-4.png) no-repeat;
+		&:hover {
+			background: url(../images/pref_icon_hov-4.png) no-repeat;
+		}
+	}
+}
+.preference__info-p {
+	color: #222222;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 30px;
+}
+
+@media only screen and (max-width : 992px) {
+	.preference__info {
+		margin-top: 20px;
+		margin-bottom: 35px;
+	}
+}

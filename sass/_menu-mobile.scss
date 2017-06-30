@@ -1,0 +1,52 @@
+.header__menu-trigeret {
+  display: none;
+  font-family: "OpenSansRegular";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .header__menu-trigeret {
+    display:block;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    z-index: 3;
+    font-size: 25px;
+    padding: 20px 0 10px 0;
+  }
+
+  .header__menu .menu__list {
+    display:none;
+  }
+
+  .header__menu {
+    position: absolute;
+    right: 20px;
+    top: 61px;
+    z-index: 10;
+    width: 250px;
+    padding-top: 0;
+  }
+
+  .menu__list {
+    border-radius: 5px;
+    padding-top: 8px;
+    background: rgba(#000, .8);
+  }
+
+  .menu__item {
+    padding-left: 20px;
+    margin-top: 20px;
+    display: block;
+  }
+
+  .menu__link {
+    font-size: 20px;
+  }
+
+}

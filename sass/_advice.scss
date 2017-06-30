@@ -1,0 +1,52 @@
+.advice {
+	background: url(../images/advice-bg.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+}
+.advice__angel {
+	position: absolute;
+	top: -34px;
+	left: -30px;
+	height: 499px;
+	width: 510px;
+	background: url(../images/advice-angel.png) no-repeat;
+}
+.advice__info {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.advice__info p {
+	color: #e2e2e2;
+}
+.advice__info-p {
+	font-size: 22px;
+	line-height: 31px;
+	margin-bottom: 40px;
+}
+.advice__info-button {
+	color: #fff;
+	background: #0955bc;
+	display: inline-block;
+	padding: 13px 18px 14px;
+	border-radius: 2px;
+	&:hover {
+		color: #f2f2f2;
+	}
+	&:active {
+		color: #f2f2f2;
+	}
+	&:focus {
+		color: #fff;
+	} 
+
+}
+.advice__info-text span {
+	display: inline-block;
+	margin: 22px 0 10px;
+	font-size: 18px;
+}
+.advice__info-text {
+	font-size: 23px;
+}
