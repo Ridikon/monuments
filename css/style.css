@@ -131,7 +131,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         -ms-flex-pack: center;
             justify-content: center; } }
 .header {
-  min-height: 650px;
+  min-height: 662px;
   padding-top: 1px;
   background: url(../images/header-bg.jpg);
   background-size: cover; }
@@ -357,9 +357,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none; }
 
 .services__content-visible {
-  max-width: 800px;
+  width: 80%;
   height: 100%;
-  margin: 0 auto;
+  margin: 5% auto;
   padding: 10px 0 20px 0;
   background: #fff; }
   .services__content-visible img {
@@ -1024,5 +1024,4 @@ a {
   .hidden__form-button-click:active {
     -webkit-box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.75);
     box-shadow: inset 1px 1px 10px 1px rgba(0, 0, 0, 0.75); }
-
 /*# sourceMappingURL=style.css.map */
