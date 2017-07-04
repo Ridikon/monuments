@@ -105,21 +105,21 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//E-mail Ajax Send
-    // $("form").submit(function() { //Change
-    //     var th = $(this);
-    //     $.ajax({
-    //         type: "POST",
-    //         url: "../mail.php", //Change
-    //         data: th.serialize()
-    //     }).done(function() {
-    //         alert("Дякуємо!");
-    //         setTimeout(function() {
-    //             // Done Functions
-    //             th.trigger("reset");
-    //         }, 1000);
-    //     });
-    //     return false;
-    // });
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "../mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            alert("Дякуємо!");
+            setTimeout(function() {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
+    });
 
 	/*Липке меню ___START*/
 	var navPos, winPos, navHeight;
@@ -162,6 +162,39 @@ $(document).ready(function() {
 
 	
 	/*mobile menu _____END*/
+
+	// GO UP BUTTON
+	const MAX_HEIGHT = 80;
+	const TIME_SCROL = 1000;
+
+	$(window).scroll(function() {
+	    if ($(this).scrollTop() > MAX_HEIGHT) {
+	        $('.scrollUp').fadeIn();
+	    }
+	    else {
+	        $('.scrollUp').fadeOut();
+	    }
+	});
+
+	$('.scrollUp').click(function() {
+	    $('html, body').animate({
+	        scrollTop: 0
+	    }, TIME_SCROL);
+	    return false;
+	});
+
+	// SMOOTH-CSROLL 
+	$(function() {
+	    $('.smooth').on('click', function(event) {
+	        var target = $(this.getAttribute('href'));
+	        if (target.length) {
+	            event.preventDefault();
+	            $('html, body').stop().animate({
+	                scrollTop: target.offset().top
+	            }, 1000);
+	        }
+	    });
+	});
 
 
 });
